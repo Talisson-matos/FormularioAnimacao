@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    
+</head>
+
+<body>
+   <audio src="../musica.mp4/echoofsadness.mp3" autoplay loop controls style="display: none;"></audio>
+
+    <div class="tela-de-fundo">
+        <video autoplay muted loop preload="auto" id="video1" class="video-de-fundo">
+            <source src="../visual.doc/2941521-hd_1920_1080_24fps.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop id="video2" class="video-de-fundo">
+            <source src="../visual.doc/3335969-hd_1920_1080_30fps.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop id="video3" class="video-de-fundo">
+            <source src="../visual.doc/4081703-uhd_3840_2160_24fps.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="formulario">
+        <form id="registration-form">
+            <ul>
+                <h2>Registro</h2>
+                <li>
+                    <label for="firstName">Primeiro Nome:</label><br>
+                    <input autofocus type="text" id="firstName" name="firstName" placeholder="Primeiro Nome" required>
+                    <br>
+                    <label for="lastName">Sobrenome:</label><br>
+                    <input type="text" id="lastName" name="lastName" placeholder="Sobrenome" required>
+                </li>
+                <li>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Digite e-mail" required>
+                </li>
+                <li>
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" maxlength="12" required>
+                </li>
+                <li>
+                    <label for="nascimento">Data de Nascimento:</label><br>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </li>
+                <li>
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                </li>
+                <li>
+                    <label for="phone">Telefone:</label><br>
+                    <input type="text" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+                </li>
+                <label style="text-transform: uppercase; font-weight: bold;">Gênero:</label>
+                <li style="display: inline-flex; padding-right: 1rem;">
+                    <input style="margin: 0;" type="radio" id="feminino" name="gender" value="feminino" required> Feminino
+                    <input style="margin: 0;" type="radio" id="masculino" name="gender" value="masculino" required> Masculino
+                </li>
+            </ul>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>
+
